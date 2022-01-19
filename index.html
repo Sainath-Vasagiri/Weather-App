@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="weather.css" rel="stylesheet" />
+    <script src="wheather.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <center>
+                <h1
+                    style="font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif; color: #571b03;">
+                    Weather App
+                </h1>
+            </center>
+            <select onChange="getWeather()" class="cities">
+                <option value="delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="london">London</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <h2 id="cityName"></h2>
+        </div>
+        <div class="row" id="weather">
+
+        </div>
+    </div>
+</body>
+
+</html>
